@@ -1,2 +1,2 @@
 ﻿## Nuke row calculator
-Valid input: 1 <= row <= 108
+Valid input: 1 <= num <= 108

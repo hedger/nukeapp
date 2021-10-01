@@ -12,7 +12,7 @@ namespace nukesolver
         /// Positive root of equation = -1 + sqrt(1 + 4 * 2 * (E - 1))
         static public int GetLevel(int nukeNumber)
         {
-            if (nukeNumber < 0)
+            if (nukeNumber <= 0)
                 throw new ArgumentException(nameof(nukeNumber));
 
             return (int)(1 + Math.Floor((-1 + Math.Sqrt(1 + 8 * (nukeNumber - 1))) / 2));
