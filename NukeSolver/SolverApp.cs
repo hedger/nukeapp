@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("NukeTest")]
-namespace nukesolver
+namespace NukeSolver
 {
     class SolverApp
     {

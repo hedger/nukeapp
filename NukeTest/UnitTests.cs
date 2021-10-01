@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using nukesolver;
+using NukeSolver;
 
 namespace NukeTest
 {
