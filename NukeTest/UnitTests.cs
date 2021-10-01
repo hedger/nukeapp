@@ -13,20 +13,20 @@ namespace NukeTest
         [Fact]
         public void BasicTest()
         {
-            Assert.Equal("1", SolverApp.Process("1"));
-            Assert.Equal("2", SolverApp.Process("2"));
-            Assert.Equal("4", SolverApp.Process("7"));
-            Assert.Equal("9", SolverApp.Process("40"));
-            Assert.Equal("14", SolverApp.Process("100"));
+            Assert.Equal(1, SolverApp.Process("1"));
+            Assert.Equal(2, SolverApp.Process("2"));
+            Assert.Equal(4, SolverApp.Process("7"));
+            Assert.Equal(9, SolverApp.Process("40"));
+            Assert.Equal(14, SolverApp.Process("100"));
         }
 
         [Fact]
         public void TestLevel8Boundaries()
         {
-            Assert.Equal("7", SolverApp.Process("28"));
-            Assert.Equal("8", SolverApp.Process("29"));
-            Assert.Equal("8", SolverApp.Process("36"));
-            Assert.Equal("9", SolverApp.Process("37"));
+            Assert.Equal(7, SolverApp.Process("28"));
+            Assert.Equal(8, SolverApp.Process("29"));
+            Assert.Equal(8, SolverApp.Process("36"));
+            Assert.Equal(9, SolverApp.Process("37"));
         }
 
         [Fact]
@@ -34,8 +34,8 @@ namespace NukeTest
         {
             Assert.Throws<ArgumentOutOfRangeException>(() => SolverApp.Process("-10"));
             Assert.Throws<ArgumentOutOfRangeException>(() => SolverApp.Process("0"));
-            Assert.Equal("1", SolverApp.Process("1"));
-            Assert.Equal("15", SolverApp.Process("108"));
+            Assert.Equal(1, SolverApp.Process("1"));
+            Assert.Equal(15, SolverApp.Process("108"));
             Assert.Throws<ArgumentOutOfRangeException>(() => SolverApp.Process("109"));
         }
 

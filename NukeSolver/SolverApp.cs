@@ -15,10 +15,10 @@ namespace nukesolver
         }
 
         // Expects valid input, throws exception otherwise
-        static public string Process(string input)
+        static public int Process(string input)
         {
             int nukeNumber = Int32.Parse(input);
-            return Solver.GetLevelConstrained(nukeNumber, minVal: MIN_NUKE, maxVal: MAX_NUKE).ToString();
+            return Solver.GetLevelConstrained(nukeNumber, minVal: MIN_NUKE, maxVal: MAX_NUKE);
         }
     }
 }
